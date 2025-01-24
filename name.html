@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> enter your name </title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <a href="index.html">Home</a> <a href="color.html">Choose a Color</a><a href="firstjava.html">Info</a>
+        <h1>Welcome to page two!</h1>
+        <p>Here I will steal your personal information and display it on screen.</p>
+        <input id="name" type="text" placeholder="ENTER YOUR NAME HERE">
+        <button type="button" onclick="enterName()">submit</button>
+        <p id="demo"></p>
+            <script>
+                function enterName() {
+                    let user = document.getElementById("name").value;
+//This first line of Javascript gets the input that the user enters by calling 
+//the value (value in this case being text) for the ID "name"
+
+                    document.getElementById("demo").innerHTML = 
+                     "Welcome to my site, " + user;
+                }
+            </script>
+    </body>
+</html>

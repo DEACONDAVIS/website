@@ -1,0 +1,15 @@
+h1{
+    color: whitesmoke
+  }
+  p{
+      color: black;
+
+  }
+  a{
+    text-align: center;
+    color: red;
+    padding-left: 10px;
+  }
+body{
+    background-color:cadetblue;
+}

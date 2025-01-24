@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>changing colors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="body">
+    <a href="index.html">Home</a> <a href="name.html">Let Me Steal Your Information</a><a href="firstjava.html">Info</a>
+    <h1>Enter the color of your choice</h1>
+    <button type="button" onclick="changeColor()">color</button>
+    <script>
+        function changeColor(){
+            let color = "#" + (Math.random() * 16777215 | 0).toString(16);
+            $("body").css("background-color", color);
+        }
+    </script>
+</body>
+
+</html>
