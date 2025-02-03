@@ -1,0 +1,27 @@
+h1{
+    color: whitesmoke
+  }
+  p{
+      color: black;
+
+  }
+  a{
+    color: red;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: block;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+body{
+    background-color:cadetblue;
+}
+input{
+  background-color: blue;
+  color:whitesmoke;
+  width: 170px;
+}
