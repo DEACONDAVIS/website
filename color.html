@@ -7,7 +7,10 @@
 "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="body">
+    <div id="sidebar">
     <a href="index.html">Home</a> <a href="name.html">Let Me Steal Your Information</a><a href="firstjava.html">Info</a>
+    </div>
+    <div id="content">
     <h1>Enter the color of your choice</h1>
     <button type="button" onclick="changeColor()">color</button>
     <script>
@@ -16,6 +19,7 @@
             $("body").css("background-color", color);
         }
     </script>
+    </div>
 </body>
 
 </html>

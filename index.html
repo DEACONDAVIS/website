@@ -4,13 +4,23 @@
         <title>
             website
         </title>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <a href="name.html">Let Me Steal Your Information</a> <a href="color.html">Choose a Color</a> <a href="firstjava.html">Info</a>
-        <h1>Welcome!</h1>
-        <p>Hi, and welcome to my website. I am making this website for my second semester of high school webdevelopment.</p>
-        <p>So far we have gone over creating websites with professional looking CSS and HTML.</p>
-        <p>I personally really like this class and it is my favorite high school class I am taking this semster.</p>
+        <div id="sidebar">
+            <a href="name.html">Let Me Steal Your Information</a> <a href="color.html">Choose a Color</a> <a href="firstjava.html">Info</a>
+        </div>
+        <div id="content">
+            <h1>Welcome!</h1>
+            <p>Hi, and welcome to my website. I am making this website for my second semester of high school webdevelopment.</p>
+            <p>So far we have gone over creating websites with professional looking CSS and HTML.</p>
+            <p>I personally really like this class and it is my favorite high school class I am taking this semster.</p>
+        
+            <input id="Num_1" type="text">
+            <input id="Num_2" type="text">
+            <button id="Butt" type="button" onclick="Maths()">ADD</button> <button id="Butt" type="button" onclick="S_Maths()">SUBTRACT</button> <button id="Butt" type="button" onclick="M_Maths()">MULTIPLY</button> <button id="Butt" type="button" onclick="D_Maths()">DIVIDE</button>
+            <p id="Answers"></p>
+        </div>
     </body>
 </html>
