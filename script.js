@@ -1,6 +1,7 @@
 function getInfo(){
     document.getElementById("info").innerHTML = "Name: Deacon Davis   Class: Web Development 2   Instructor: Kim Gross  High School: Braintree Academy"
 }
+
 function doCrazyMaths(){
     let x = parseInt(document.getElementById("UserX").value)
     let y =  parseInt(document.getElementById("UserY").value)
@@ -37,4 +38,30 @@ function randomPlaceholder(){
 window.onload = function(){
     document.getElementById("Num_1").value = randomPlaceholder()
     document.getElementById("Num_2").value = randomPlaceholder()
+}
+let numberArray = [];
+
+function huh(){
+   let value = document.getElementById("numENTER").value
+   if (value.trim() !== ""){
+    let number = Number(value);
+        if(!isNaN(number)){
+        if (number === -1){
+            addArray();
+        } else{
+            numberArray.push(number);
+            console.log(numberArray)
+        }
+        } else{
+            console.log("Please enter a valid number!");
+        }
+   }
+   else{
+    console.log("The input is empty");
+   }
+}
+function addArray(){
+    let sum = numberArray.reduce((acc, num) => acc + num, 0);
+    document.getElementById("result").innerHTML = sum;
+    numberArray.length = 0;
 }
