@@ -6,22 +6,30 @@
         </title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="sidebar">
-            <a href="name.html">Let Me Steal Your Information</a> <a href="color.html">Choose a Color</a> <a href="firstjava.html">Info</a>
+            <a href="index.html" id="active">Home</a>
+            <a href="name.html">Let Me Steal Your Information</a>
+            <a href="color.html">Choose a Color</a>
+            <a href="firstjava.html">Info</a>
+        </div>
+        <div id="title">
+            <h1>The Epicenter of Random Opinions</h1>
         </div>
         <div id="content">
-            <h1>Welcome!</h1>
-            <p>Hi, and welcome to my website. I am making this website for my second semester of high school webdevelopment.</p>
-            <p>So far we have gone over creating websites with professional looking CSS and HTML.</p>
-            <p>I personally really like this class and it is my favorite high school class I am taking this semster.</p>
+            <h2>Welcome!</h2>
+            <p>This website is home to a bunch of random opinions that either I personally have, or I have collected from the users of the website.</p>
+            <p>No important or political opinions will be hosted on this website, just random Hot-Takes and funny opinions.</p>
+    
         
             <input id="Num_1" type="text">
             <input id="Num_2" type="text">
             <button id="Butt" type="button" onclick="Maths()">ADD</button> <button id="Butt" type="button" onclick="S_Maths()">SUBTRACT</button> <button id="Butt" type="button" onclick="M_Maths()">MULTIPLY</button> <button id="Butt" type="button" onclick="D_Maths()">DIVIDE</button>
-            <p id="Answers">
-            </br>
+            <p id="Answers"> </p>
             <input id="numENTER" type="text">
             <button id="Butt" onclick="huh()" type="button">Add to total</button>
             <button id="Butt" onclick="addArray()" type="button">Sum total</button>

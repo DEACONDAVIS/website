@@ -61,7 +61,10 @@ function huh(){
    }
 }
 function addArray(){
-    let sum = numberArray.reduce((acc, num) => acc + num, 0);
-    document.getElementById("result").innerHTML = sum;
+    let total = 0;
+        for(let i = 0; i < numberArray.length; i++){
+            total += numberArray[i];
+        }
+    document.getElementById("result").innerHTML = total;
     numberArray.length = 0;
 }

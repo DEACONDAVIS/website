@@ -3,15 +3,23 @@
 <head>
     <title>changing colors</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="body">
+    <div id="title">
+        <h1>The Epicenter of Random Opinions</h1>
+    </div>
     <div id="sidebar">
-    <a href="index.html">Home</a> <a href="name.html">Let Me Steal Your Information</a><a href="firstjava.html">Info</a>
+    <a href="index.html">Home</a> 
+    <a href="name.html">Let Me Steal Your Information</a>
+    <a href="color.html" id="active">Choose a Color</a>
+    <a href="firstjava.html">Info</a>
     </div>
     <div id="content">
-    <h1>Click the button really fast for a rave</h1>
+    <h2>Click the button really fast for a rave</h2>
     <button type="button" onclick="changeColor()">color</button>
     <script>
         function changeColor(){
