@@ -75,3 +75,140 @@ input{
   box-shadow: inset 3px 3px 5px rgb(234, 234, 234);
   box-shadow: 1px 1px 3px rgb(95, 95, 95);
 }
+/*this next part of the code is for my tic tac toe board and is incredbily boring and repetitive*/
+#a1a{
+  position:fixed;
+  top: 375px;
+  left: 300px;
+}
+#ttubA1{
+  position:fixed;
+  top: 375px;
+  left: 570px;
+}
+#ttubA1o{
+  position:fixed;
+  top: 375px;
+  left: 700px;
+}
+#b1b{
+  position:fixed;
+  top: 400px;
+  left: 300px;
+}
+#ttubB1{
+  position:fixed;
+  top: 400px;
+  left: 570px;
+}
+#ttubB1o{
+  position:fixed;
+  top: 400px;
+  left: 700px;
+}
+#c1c{
+  position:fixed;
+  top: 425px;
+  left: 300px;
+}
+#ttubC1{
+  position:fixed;
+  top: 425px;
+  left: 570px;
+}
+#ttubC1o{
+  position:fixed;
+  top: 425px;
+  left: 700px;
+}
+#a2a{
+  position:fixed;
+  top: 375px;
+  left: 350px;
+}
+#ttubA2{
+  position:fixed;
+  top: 375px;
+  left: 600px;
+}
+#ttubA2o{
+  position:fixed;
+  top: 375px;
+  left: 730px;
+}
+#b2b{
+  position:fixed;
+  top: 400px;
+  left: 350px;
+}
+#ttubB2{
+  position:fixed;
+  top: 400px;
+  left: 600px;
+}
+#ttubB2o{
+  position:fixed;
+  top: 400px;
+  left: 730px;
+}
+#c2c{
+  position:fixed;
+  top: 425px;
+  left: 350px;
+}
+#ttubC2{
+  position:fixed;
+  top: 425px;
+  left: 600px;
+}
+#ttubC2o{
+  position:fixed;
+  top: 425px;
+  left: 730px;
+}
+#a3a{
+  position:fixed;
+  top: 375px;
+  left: 400px;
+}
+#ttubA3{
+  position:fixed;
+  top: 375px;
+  left: 630px;
+}
+#ttubA3o{
+  position:fixed;
+  top: 375px;
+  left: 760px;
+}
+#b3b{
+  position:fixed;
+  top: 400px;
+  left: 400px;
+}
+#ttubB3{
+  position:fixed;
+  top: 400px;
+  left: 630px;
+}
+#ttubB3o{
+  position:fixed;
+  top: 400px;
+  left: 760px;
+}
+#c3c{
+  position:fixed;
+  top: 425px;
+  left: 400px;
+}
+#ttubC3{
+  position:fixed;
+  top: 425px;
+  left: 630px;
+}
+#ttubC3o{
+  position:fixed;
+  top: 425px;
+  left: 760px;
+}
+/*Here my tic tac toe CSS ends and the rest of my code is less boring*/

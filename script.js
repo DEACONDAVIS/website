@@ -68,3 +68,73 @@ function addArray(){
     document.getElementById("result").innerHTML = total;
     numberArray.length = 0;
 }
+function A1(){
+    document.getElementById("a1a").innerHTML = "x";
+}
+function A2(){
+    document.getElementById("a2a").innerHTML = "x";
+}
+function A3(){
+    document.getElementById("a3a").innerHTML = "x";
+}
+function B1(){
+    document.getElementById("b1b").innerHTML = "x";
+}
+function B2(){
+    document.getElementById("b2b").innerHTML = "x";
+}
+function B3(){
+    document.getElementById("b3b").innerHTML = "x";
+}
+function C1(){
+    document.getElementById("c1c").innerHTML = "x";
+}
+function C2(){
+    document.getElementById("c2c").innerHTML = "x";
+}
+function C3(){
+    document.getElementById("c3c").innerHTML = "x";
+}
+
+
+
+function A1o(){
+    document.getElementById("a1a").innerHTML = "o";
+}
+function A2o(){
+    document.getElementById("a2a").innerHTML = "o";
+}
+function A3o(){
+    document.getElementById("a3a").innerHTML = "o";
+}
+function B1o(){
+    document.getElementById("b1b").innerHTML = "o";
+}
+function B2o(){
+    document.getElementById("b2b").innerHTML = "o";
+}
+function B3o(){
+    document.getElementById("b3b").innerHTML = "o";
+}
+function C1o(){
+    document.getElementById("c1c").innerHTML = "o";
+}
+function C2o(){
+    document.getElementById("c2c").innerHTML = "o";
+}
+function C3o(){
+    document.getElementById("c3c").innerHTML = "o";
+}
+function clearBoard(){
+    document.getElementById("a1a").innerHTML = "#";
+    document.getElementById("a2a").innerHTML = "#";
+    document.getElementById("a3a").innerHTML = "#";
+
+    document.getElementById("b1b").innerHTML = "#";
+    document.getElementById("b2b").innerHTML = "#";
+    document.getElementById("b3b").innerHTML = "#";
+
+    document.getElementById("c1c").innerHTML = "#";
+    document.getElementById("c2c").innerHTML = "#";
+    document.getElementById("c3c").innerHTML = "#";
+}
