@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+
     </head>
     <body>
         <div id="sidebar">
@@ -37,38 +39,42 @@
             <button id="Butt" onclick="addArray()" type="button">Sum total</button>
             <p id="result"> </p>
             </br>
-            <p>Below is a game of tic-tac-toe click on the grid for x and o to play a fun game</p>
 
+            <table id="calcu">
+                <tr>
+                    <td colspan="3">
+                        <input type="text" id="swerans">
+                    </td>
+                    <td>
+                        <input type="button" value="c" id="calcbutt" onclick="clear()" >
+                    </td>
+                </tr>
 
-            <p id="a1a">#</p><p id="a2a">#</p><p id="a3a">#</p>
-            <button id="ttubA1" type="button" onclick="A1()">x</button>
-            <button id="ttubA2" type="button" onclick="A2()">x</button>
-            <button id="ttubA3" type="button" onclick="A3()">x</button>
-            
-            <button id="ttubA1o" type="button" onclick="A1o()">o</button>
-            <button id="ttubA2o" type="button" onclick="A2o()">o</button>
-            <button id="ttubA3o" type="button" onclick="A3o()">o</button>
-
-            <p id="b1b">#</p><p id="b2b">#</p><p id="b3b">#</p>
-            <button id="ttubB1" type="button" onclick="B1()">x</button>
-            <button id="ttubB2" type="button" onclick="B2()">x</button>
-            <button id="ttubB3" type="button" onclick="B3()">x</button>
-            
-            <button id="ttubB1o" type="button" onclick="B1o()">o</button>
-            <button id="ttubB2o" type="button" onclick="B2o()">o</button>
-            <button id="ttubB3o" type="button" onclick="B3o()">o</button>
-
-            <p id="c1c">#</p><p id="c2c">#</p><p id="c3c">#</p>
-            <button id="ttubC1" type="button" onclick="C1()">x</button>
-            <button id="ttubC2" type="button" onclick="C2()">x</button>
-            <button id="ttubC3" type="button" onclick="C3()">x</button>
-
-            <button id="ttubC1o" type="button" onclick="C1o()">o</button>
-            <button id="ttubC2o" type="button" onclick="C2o()">o</button>
-            <button id="ttubC3o" type="button" onclick="C3o()">o</button>
-
-            <button type="button" onclick="clearBoard()">clear the board</button>
-
+                <tr>
+                    <td><input type="button" value="1" id="calcbutt" onclick="disp('1')"></td>
+                    <td><input type="button" value="2" id="calcbutt" onclick="disp('2')"></td>
+                    <td><input type="button" value="3" id="calcbutt" onclick="disp('3')"></td>
+                    <td><input type="button" value="/" id="calcbutt" onclick="disp('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" id="calcbutt" onclick="disp('4')"></td>
+                    <td><input type="button" value="5" id="calcbutt" onclick="disp('5')"></td>
+                    <td><input type="button" value="6" id="calcbutt" onclick="disp('6')"></td>
+                    <td><input type="button" value="*" id="calcbutt" onclick="disp('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" id="calcbutt" onclick="disp('7')"></td>
+                    <td><input type="button" value="8" id="calcbutt" onclick="disp('8')"></td>
+                    <td><input type="button" value="9" id="calcbutt" onclick="disp('9')"></td>
+                    <td><input type="button" value="-" id="calcbutt" onclick="disp('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" id="calcbutt" onclick="disp('0')"></td>
+                    <td><input type="button" value="." id="calcbutt" onclick="disp('.')"></td>
+                    <td><input type="button" value="=" id="calcbutt" onclick="solve()"></td>
+                    <td><input type="button" value="+" id="calcbutt" onclick="disp('+')"></td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>

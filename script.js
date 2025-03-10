@@ -138,3 +138,16 @@ function clearBoard(){
     document.getElementById("c2c").innerHTML = "#";
     document.getElementById("c3c").innerHTML = "#";
 }
+
+function disp(val){
+    document.getElementById("swerans").value += val
+}
+
+function solve(){
+    let A = document.getElementById("swerans").value
+    let B = math.evaluate(A)
+    document.getElementById("swerans").value = B
+}
+function clear(){
+    document.getElementById("swerans").value = ""
+}
