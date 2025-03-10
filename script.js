@@ -140,14 +140,14 @@ function clearBoard(){
 }
 
 function disp(val){
-    document.getElementById("swerans").value += val
+    document.getElementById("swerans").value += val;
 }
 
 function solve(){
-    let A = document.getElementById("swerans").value
-    let B = math.evaluate(A)
-    document.getElementById("swerans").value = B
+    let A = document.getElementById("swerans").value;
+    let B = math.evaluate(A);
+    document.getElementById("swerans").value = B;
 }
-function clear(){
-    document.getElementById("swerans").value = ""
+function clearScreen(){
+    document.getElementById("swerans").value = "";
 }
