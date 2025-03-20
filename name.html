@@ -14,28 +14,27 @@
         </div>
         <div id="sidebar">
         <a href="index.html">Home</a>
-        <a href="name.html" id="active">Let Me Steal Your Information</a>
+        <a href="name.html" id="active">Opinion Library</a>
         <a href="color.html">Choose a Color</a>
-        <a href="firstjava.html">Info</a>
+        <a href="firstjava.html">Let Me Steal Your Information</a>
         <a href="calc.html">Calculators</a>
         </div>
         <div id="content">
-        <h2>Hi There</h2>
-        <p>Here I will steal your personal information and display it on screen.</p>
-        <input id="name" type="text" placeholder="ENTER YOUR NAME HERE">
-        <button type="button" onclick="enterName()">submit</button>
-        <p id="demo"></p>
-            <script>
-                function enterName() {
-                    let user = document.getElementById("name").value;
-//This first line of Javascript gets the input that the user enters by calling 
-//the value (value in this case being text) for the ID "name"
-
-                    document.getElementById("demo").innerHTML = 
-                     "Welcome to my site, " + user;
-                }
-            </script>
-            
+        <h2>Opinion Library</h2>
+        <p>The only correct way to eat smarties is by crushing them up and snorting them.</p>
+        <p>On reddit I found "It is better to throw away trash then to recycle it." </p>
+        <p>Byclists shouln't be allowed on the road because every time I drive by one I feel like I'm going to hit them.</p>
+        <p>Also from reddit "You should be allowed to keep the bones of your loved ones when they die." Could you imagine? "This pelvis fits perfectly over the fireplace what a great way to memorialize grandma."</p>
+        <p>Soda tastes better when it isn't in a can. Even if you just pour it into a plastic cup it tastes better.</p>
+        <p>In-n-Out burger is very mediocre and overhyped</p>
+        <p>The movie Wicked was super long and it didn't even finish the story of the movie 4/10 stars</p>
+        <p>Pinapple on pizza isn't bad, but it isn't crazy good. </p>
+        <p>Christmas music shouldn't be played until after thanksgiving. We literally have an entire holiday about being thankful, and no one is thankful for it because they just want christmas.</p>
+        <p>Theme parks are expensive, and not very fun.</p>
+        <form action="https://formspree.io/f/mwplleve" method="POST">
+            <input type="text" id="_ideas" name="idea" placeholder="Type your unpopular opinions HERE" required>
+            <input type="submit" value="Submit" id="johnathy">
+        </form>
         </div>
     </body>
 </html>

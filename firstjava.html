@@ -14,9 +14,9 @@
     </div>
     <div id="sidebar">
     <a href="index.html">Home</a> 
-    <a href="name.html">Let Me Steal Your Information</a>
+    <a href="name.html">Opinion Library</a>
     <a href="color.html">Choose a Color</a>
-    <a href="firstjava.html" id="active">Info</a>
+    <a href="firstjava.html" id="active">Let Me Steal Your Information</a>
     <a href="calc.html">Calculators</a>
     </div>
     <div id="content">
@@ -34,6 +34,22 @@
             .catch(error => console.error("Error fetching IP address", error));
         }
     </script>
+    <h2>Hi There</h2>
+    <p>Here I will steal your personal information and display it on screen.</p>
+    <input id="name" type="text" placeholder="ENTER YOUR NAME HERE">
+    <button type="button" onclick="enterName()">submit</button>
+    <p id="demo"></p>
+        <script>
+            function enterName() {
+                let user = document.getElementById("name").value;
+//This first line of Javascript gets the input that the user enters by calling 
+//the value (value in this case being text) for the ID "name"
+
+                document.getElementById("demo").innerHTML = 
+                 "Welcome to my site, " + user;
+            }
+        </script>
+        
     </div>
 </body>
 </html>
