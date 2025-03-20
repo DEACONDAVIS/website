@@ -77,6 +77,26 @@ input{
   box-shadow: inset 3px 3px 5px rgb(234, 234, 234);
   box-shadow: 1px 1px 3px rgb(95, 95, 95);
 }
+#frank{
+  position: relative;
+  left: 400px;
+  background-color: lightgray;
+  padding: 50px;
+  font-size: xx-large;
+  font-family: "Grechen Fuemen", serif;;
+  color:red;
+}
+#info{
+  text-align: center;
+  font-family: monospace;
+  font-size: large;
+}
+
+
+
+
+
+
 /*this next part of the code is for my tic tac toe board and is incredbily boring and repetitive*/
 #a1a{
   position:fixed;

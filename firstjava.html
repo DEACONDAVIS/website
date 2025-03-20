@@ -17,17 +17,23 @@
     <a href="name.html">Let Me Steal Your Information</a>
     <a href="color.html">Choose a Color</a>
     <a href="firstjava.html" id="active">Info</a>
+    <a href="calc.html">Calculators</a>
     </div>
     <div id="content">
-    <h2>Info</h2>
-    <input id="UserX" type="text" placeholder="Please enter a number">
-    <input id="UserY" type="text" placeholder="Please enter a second number">
-    <button type="button" onclick="doCrazyMaths()">Add</button>
-    <p id="answer"></p>
-
-</br>
-    <button type="button" onclick="getInfo()">click me</button>
+    <button type="button" onclick="getInfo()" id="frank">CLICK ME</button>
     <p id="info"> </p>
+    <script>
+        function getInfo(){
+        fetch("http://ip-api.com/json")
+            .then(response => response.json())
+            .then(data =>{
+                console.log(data);
+                document.getElementById("info").textContent = 
+                    ` ${data.city}, ${data.regionName}, ${data.country}. Your relative latitude and longetude are ${data.lat} ${data.lon}.`;
+            })
+            .catch(error => console.error("Error fetching location", error));
+        }
+    </script>
     </div>
 </body>
 </html>
