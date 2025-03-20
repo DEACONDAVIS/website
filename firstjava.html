@@ -24,14 +24,14 @@
     <p id="info"> </p>
     <script>
         function getInfo(){
-        fetch("https://ip-api.com/json")
+        fetch("https://api.ipify.org?format=json")
             .then(response => response.json())
             .then(data =>{
                 console.log(data);
                 document.getElementById("info").textContent = 
-                    ` ${data.city}, ${data.regionName}, ${data.country}. Your relative latitude and longetude are ${data.lat} ${data.lon}.`;
+                    `Your IP address is ${data.ip}.`;
             })
-            .catch(error => console.error("Error fetching location", error));
+            .catch(error => console.error("Error fetching IP address", error));
         }
     </script>
     </div>
