@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,6 +11,7 @@
     <title>Info</title>
 </head>
 <body>
+    <div id="shake_container">
     <div id="title">
         <h1>The Epicenter of Random Opinions</h1>
     </div>
@@ -37,19 +40,40 @@
     <h2>Hi There</h2>
     <p>Here I will steal your personal information and display it on screen.</p>
     <input id="name" type="text" placeholder="ENTER YOUR NAME HERE">
-    <button type="button" onclick="enterName()">submit</button>
+    <button type="button" onclick="enterName(); shakePage()" id="scareButton">submit</button>
     <p id="demo"></p>
         <script>
             function enterName() {
                 let user = document.getElementById("name").value;
 //This first line of Javascript gets the input that the user enters by calling 
 //the value (value in this case being text) for the ID "name"
-
                 document.getElementById("demo").innerHTML = 
-                 "Welcome to my site, " + user;
+                 "You've broken my page, " + user + "!! How dare you!";
             }
+            const button = document.getElementById("scareButton");
+
+            function shakePage(){
+                const shake_container = document.getElementById("shake_container")
+                let time = 0;
+                const interval = setInterval(() => {
+                    if(time > 1000){
+                        clearInterval(interval);
+                        shake_container.style.transform = "translate(0px, 0px)";
+                        return;
+                    }
+                    const x = (Math.random() - 0.5) * 20;
+                    const y = (Math.random() - 0.5) * 20;
+
+                    shake_container.style.transform = `translate(${x}px, ${y}px)`;
+                    document.getElementById("sidebar").style.transform = `translate(${x}px, ${y}px)`;
+                    document.getElementById("title").style.transform = `translate(${x}px, ${y}px)`;
+                    document.getElementById("content").style.transform = `translate(${x}px, ${y}px)`;
+                    time += 50;
+                }, 50);
+            }
+            
         </script>
-        
+    </div>
     </div>
 </body>
 </html>

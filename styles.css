@@ -51,6 +51,12 @@ h1{
     margin-left: 260px;
     padding: 20px;
   }
+#shake_container{
+  height: 100%;
+  width: 100%;
+  position:relative;
+  transition: transform, 0.05s ease-in-out;
+}
 body{
     background-color: white;
 }
