@@ -70,7 +70,8 @@ input{
 }
 #Butt2{
   position: relative;
-  top: 50px;
+  top: 20px;
+  left: 250px;
   background-color: lightgray;
   padding: 25px;
 }
