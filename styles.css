@@ -68,6 +68,15 @@ input{
 #Butt{
   background-color: lightgray;
 }
+#Butt2{
+  position: relative;
+  top: 50px;
+  background-color: lightgray;
+  padding: 25px;
+}
+input{
+  padding: 10px;
+}
 #title{
   position: fixed;
   left: 0px;

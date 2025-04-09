@@ -1,4 +1,38 @@
+function checkInfo(){
+    let namE = document.getElementById("Name").value;
+    let addR = document.getElementById("addR").value;
+    let emaD = document.getElementById("emad").value;
+    let phnO = document.getElementById("phoneNo").value;
 
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRegex.test(emaD)){
+        document.getElementById("stuff2").innerHTML = "";
+    } else {
+        document.getElementById("stuff2").innerHTML = emaD;
+    }
+    document.getElementById("stuf").innerHTML = namE;
+    let phoneRegex = /^(?:\+1\s?)?(?:\(?(\d{3})\)?[\s.-]?)(\d{3})[\s.-]?(\d{4})$/;
+    let match = phnO.match(phoneRegex);
+
+    if(match){
+        let areaCode = match[1];
+        let prefix = match[2];
+        let num = match[3];
+
+        let formattedNo = `+1 (${areaCode}) ${prefix}-${num}`;
+        document.getElementById("stuff").innerHTML = formattedNo;
+
+    } 
+    else {
+        document.getElementById("stuff").innerHTML = "";
+    }
+    let zipRegex = /^\d{5}$/;
+    if(!zipRegex.test(addR)){
+        document.getElementById("stuff3").innerHTML = "";
+    } else{
+        document.getElementById("stuff3").innerHTML = addR;
+    }
+}
 function doCrazyMaths(){
     let x = parseInt(document.getElementById("UserX").value)
     let y =  parseInt(document.getElementById("UserY").value)
